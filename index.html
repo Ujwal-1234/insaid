@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Insaid</title>
+        <link href="./asset/css/tailwind.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section class=" w-full h-full bg-danger bg-opacity-20" id="home">
+            <div class="absolute top-100 w-[90%] flex flex-wrap items-center justify-center left-[5%] p-10 rounded-2xl bg-opacity-70 bg-white">
+                <img src="./asset/img/dron1.webp" />
+                <p class="w-full flex flex-wrap items-center justify-center p-8">
+                    <input type="text" class="border-black border rounded-2xl m-2 p-4" placeholder="From Location" />
+                    <input type="text" class="border-black border rounded-2xl m-2 p-4" placeholder="To Location" />
+                    <input type="submit" class="border-black border rounded-2xl p-4 bg-danger bg-opacity-70" value="Deliver" />
+                </p>
+            </div>
+            
+            <div class="absolute rounded-2xl p-4 mt-3 lg:w-full border-b-2 shadow-lg bg-dark bg-opacity-30">
+                <p class="text-3xl flex flex-wrap">
+                    <a href="#home" class="lg:p-4 hover:cursor-pointer hover:text-white"><span class="mr-4 material-symbols-outlined">home</span><span class="lg:inline hidden">Home</span></a>
+                    <a href="#contact" class="ml-3 hover:cursor-pointer hover:text-white"><span class="mr-4 material-symbols-outlined"> contact_support </span><span class="lg:inline hidden">Contact Us</span></a>
+                    <a id="auth" onclick="_auth()" class="lg:right-6 hover:cursor-pointer hover:text-white lg:absolute"><span class="mr-4 material-symbols-outlined"> account_circle </span><span class="lg:inline hidden">Auth</span></a>
+                    <a id="close" onclick="_close()" class="lg:right-6 hover:cursor-pointer hover:text-white lg:absolute"><span class="mr-4 material-symbols-outlined"> cancel </span></a>
+                </p>
+            </div>
+            
+            <div class=" bottom-5 absolute flex justify-center items-center text-center  w-full">
+                A delivery drone is an unmanned aerial vehicle (UAV) used to transport packages that include medical supplies, food, or other goods.
+            </div>
+            <div id="auth_form" class="bg-dark bottom-0 lg:bottom-reset bg-opacity-90 absolute w-full lg:max-w-[738px] h-auto lg:right-10 lg:top-50 rounded p-10">
+                <form action="" class="w-full">
+                    <input type="text" class="block mt-3 z-20 z-40 rounded-2xl p-4 text-center w-full" placeholder="Email"/>
+                    <input type="text" class="block mt-3 rounded-2xl p-4 text-center w-full" placeholder="Password"/>
+                    <input type="submit" class="block mt-3 rounded-2xl p-4 text-center font-bold w-full hover:cursor-pointer bg-white bg-opacity-30 hover:bg-opacity-10 hover:text-white"/>
+                </form>
+            </div>
+        </section>    
+        <section id="contact" class=" relative flex w-full h-full bg-danger bg-opacity-25">
+            <form class="w-[500px] flex-wrap m-auto bg-dark bg-opacity-20 p-10 rounded-2xl">
+                <input type="text" class="w-full rounded-2xl mt-3 text-2 p-3 text-center" placeholder="Full Name"/>
+                <input type="text" class="w-full rounded-2xl mt-3 text-2 p-3 text-center" placeholder="Phone"/>
+                <input type="text" class="w-full rounded-2xl mt-3 text-2 p-3 text-center" placeholder="Email"/>
+                <textarea class="w-full rounded-2xl mt-3 text-2 p-3 text-center" placeholder="Enter Your Query"></textarea>
+                <input type="submit" class="w-full rounded-2xl bg-success text-white bg-opacity-90 hover:cursor-pointer hover:bg-opacity-100 mt-3 text-2 p-3 text-center" placeholder="Text"/>
+            </form>
+
+            <a href="#home" class="p-4 bg-dark bg-opacity-20 rounded-full absolute bottom-5 right-6 hover:cursor-pointer hover:text-white"><span class="material-symbols-outlined">
+                home
+                </span></a>
+        </section>
+        
+        <script src="./asset/js/index.js"></script>
+        
+    </body>
+</html>
